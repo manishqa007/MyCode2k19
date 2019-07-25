@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class String07_wordPresentInString {
+public class String07_WordPresentInString {
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);

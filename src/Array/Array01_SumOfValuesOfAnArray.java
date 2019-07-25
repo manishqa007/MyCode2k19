@@ -1,6 +1,6 @@
 package Array;
 
-public class Array01SumOfValuesOfAnArray {
+public class Array01_SumOfValuesOfAnArray {
 
 	public static void main(String[] args) {
 		int sum = 0;
