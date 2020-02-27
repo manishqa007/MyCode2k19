@@ -10,11 +10,13 @@ public class String08_MaxNumberOfConsecutiveOne {
 			if (str.charAt(i) == 49) {
 				temp++;
 			}
-			if (temp > max) {
-				max = temp;
+			if (i == str.length() - 1 || str.charAt(i) == 48) {
+				if (temp > max) {
+					max = temp;
+				}
+				temp = 0;
 			}
-			temp = 0;
 		}
-		System.out.println(max);
+		System.out.println("Max consecutive 1's: " + max);
 	}
 }

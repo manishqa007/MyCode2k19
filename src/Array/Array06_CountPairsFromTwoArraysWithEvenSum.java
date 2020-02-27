@@ -7,6 +7,7 @@ package Array;
 	
 	Input: A[] = {2, 4, 6}, B[] = {8, 10, 12}
 	Output: 3
+	{2,8},{2,10},{2,11}
 */
 
 public class Array06_CountPairsFromTwoArraysWithEvenSum {

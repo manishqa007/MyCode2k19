@@ -22,6 +22,7 @@ public class Misc02_MystryNumber {
 		}
 		if(flag==false) {
 			System.out.println("No mystry number exist");
+			System.out.println();
 		}
 	}
 }

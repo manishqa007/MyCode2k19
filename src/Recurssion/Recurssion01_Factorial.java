@@ -3,9 +3,7 @@ package Recurssion;
 public class Recurssion01_Factorial {
 
 	public static void main(String[] args) {
-
-		int n;
-		n = 4;
+		int n = 4;
 		System.out.println("Factorial of "+ n +" is: " +factorial(n));
 	}
 

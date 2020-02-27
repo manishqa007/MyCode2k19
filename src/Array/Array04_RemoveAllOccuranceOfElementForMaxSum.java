@@ -1,7 +1,5 @@
 package Array;
 
-import java.util.Arrays;
-
 /*
 Find maximum sum by removing least sum of a given number in an array
 i/p: {1,1,3}, o/p:3=> Remove all 1 from array i.e, {3}
