@@ -2,8 +2,8 @@ package Adobe;
 
 import java.util.Scanner;
 
-//In this problem,a ching S is composed of lowercase alphabets and wildcard characters i.e.'?'.Here,'?'can be replaced by any of the lowercase alphabets.Now you have to classify the given ching on the basis of following rules:
-//If there are more than 3 consonants together or more than 5 vowels together,the ching is considered to be"BAD".A ching is considered"GOOD"only if it is not“BAD”.
+//In this problem,a String S is composed of lowercase alphabets and wildcard characters i.e.'?'.Here,'?'can be replaced by any of the lowercase alphabets.Now you have to classify the given string on the basis of following rules:
+//If there are more than 3 consonants together or more than 5 vowels together,the String is considered to be"BAD".A String is considered"GOOD"only if it is not“BAD”.
 public class String11_GoodOrBadString {
 
 	public static void main(String[] args) {

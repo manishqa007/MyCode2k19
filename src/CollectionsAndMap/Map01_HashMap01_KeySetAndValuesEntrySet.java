@@ -11,28 +11,27 @@ public class Map01_HashMap01_KeySetAndValuesEntrySet {
 
 	public static void main(String[] args) {
 		HashMap m = new HashMap();
-		m.put("one","one");
-		m.put("two","two");
-		m.put("3","three");
+		m.put(1,"one");
+		m.put('a', 'A');
 		m.put("four","four");
 		m.put(11,"oneone");
+		m.put("3","three");
 		System.out.println(m);
-		
 		Set s = m.keySet();
-		System.out.println("KeySet: "+m);
-		
-		Collection c =  m.values();
+		System.out.println("Keyset: "+s);
+
+		Collection c = m.values();
 		System.out.println("Values: "+c);
+
+		Set es = m.entrySet();
+		System.out.println("Entry: "+es);
 		
-		Set s1 = m.entrySet();
-		System.out.println(s1);
-		
-		Iterator itr = s1.iterator();
+		Iterator itr = es.iterator();
 		while(itr.hasNext()) {
-			Map.Entry m1 = (Map.Entry)itr.next();
-			System.out.println(m1.getKey()+" "+m1.getValue());
-			if(m1.getKey().equals("3")){
-				m1.setValue("THREE");
+			Map.Entry me = (Map.Entry)itr.next();
+			System.out.println(me.getKey()+" "+me.getValue());
+			if(me.getKey().equals('a')) {
+				me.setValue(2);
 			}
 		}
 		System.out.println(m);

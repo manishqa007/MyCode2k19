@@ -5,7 +5,7 @@ import java.util.TreeSet;
 public class Coll04_TreeSet01_Demo {
 
 	public static void main(String[] args) {
-		TreeSet ts = new TreeSet();
+		TreeSet<String> ts = new TreeSet<String>();
 		ts.add(new String("Manish"));
 		System.out.println(ts);
 		ts.add(new String("Bij"));

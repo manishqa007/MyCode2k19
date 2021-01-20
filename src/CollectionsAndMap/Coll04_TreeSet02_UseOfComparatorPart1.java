@@ -3,7 +3,6 @@ package CollectionsAndMap;
 import java.util.Comparator;
 import java.util.TreeSet;
 
-
 // Use of Comparator for customized sorting in TreeSet Part 1 
 // (Durga Video lecture: "TreeSet Details part 6")
 public class Coll04_TreeSet02_UseOfComparatorPart1 {
@@ -33,5 +32,4 @@ class MyComperator implements Comparator {
 			return 0;
 		}
 	}
-
 }

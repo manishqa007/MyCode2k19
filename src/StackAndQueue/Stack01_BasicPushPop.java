@@ -7,18 +7,19 @@ public class Stack01_BasicPushPop {
 	public static void main(String[] args) {
 		Stack<String> stack = new Stack<String>();
 		stack.push("first");
-		printStack(stack);
 		stack.push("second");
-		printStack(stack);
+		System.out.println(stack);
 		stack.push("third");
-		printStack(stack);
+		checkStack(stack);
 		stack.pop();
-		printStack(stack);
+		System.out.println(stack);
 		stack.pop();
-		printStack(stack);
+		checkStack(stack);
+		stack.pop();
+		checkStack(stack);
 	}
 	
-	public static void printStack(Stack<String> s) {
+	public static void checkStack(Stack<String> s) {
 		if(s.isEmpty()) {
 			System.out.println("Stack is empty");
 		}else {

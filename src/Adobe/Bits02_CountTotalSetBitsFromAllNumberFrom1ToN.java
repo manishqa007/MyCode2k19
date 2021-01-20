@@ -15,7 +15,7 @@ public class Bits02_CountTotalSetBitsFromAllNumberFrom1ToN {
 		}
 
 		private static int totalSetBitCountFrom1ToN_method2(int number) {
-			int count = 0, bits=0,temp=number;
+			int count = 0, bits=0,temp;
 			for(int i = 1; i<=number;i++) {
 				temp=i;
 				while(temp>0) {

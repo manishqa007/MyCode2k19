@@ -18,6 +18,5 @@ public class String06_CheckIfstringsAreRotationsOfEachOtherOrNot {
 		} else {
 			System.out.println("0");
 		}
-
 	}
 }

@@ -11,17 +11,16 @@ public class Pattern07 {
 		int i, j, k, x;
 		for (i = 1; i <= 5; i++) {
 			for (j = 4; j >= i; j--) {
-				System.out.print("+");
+				System.out.print(" ");
 			}
 			x = i;
 			for (k = 1; k <= (2 * i - 1); k++) {
-				if (k < (2*i) / 2) {
+				if (k < (2 * i) / 2)
 					System.out.print(x++);
-				} else {
+				else
 					System.out.print(x--);
-				}
 			}
-			System.out.println("");
+			System.out.println();
 		}
 	}
 }

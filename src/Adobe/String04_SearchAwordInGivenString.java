@@ -8,8 +8,18 @@ public class String04_SearchAwordInGivenString {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter the string: ");
 		String str = input.nextLine();
-		System.out.println("Enter the word to e searched: ");
+		System.out.println("Enter the word to be searched: ");
 		String search = input.nextLine();
+		method1(str,search);
+		method2(str,search); // using contains
+		
+	}
+
+	private static void method1(String str, String search) {
+		System.out.println(str.contains(search)?"Word exist":"Word do not exist");
+	}
+
+	private static void method2(String str, String search) {
 		boolean flag = false;
 		String temp = "";
 		for (int i = 0; i < str.length(); i++) {
@@ -22,7 +32,7 @@ public class String04_SearchAwordInGivenString {
 					flag = true;
 					break;
 				}
-				System.out.println("temp: "+temp);
+//				System.out.println("temp: "+temp);
 				temp="";
 			}
 		}

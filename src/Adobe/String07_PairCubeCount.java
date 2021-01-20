@@ -3,7 +3,7 @@ package Adobe;
 import java.util.Scanner;
 
 /*
- 	Given N, count all ‘a’(>=1) and ‘b’(>=0) that satisfy the condition a3 + b3 = N.
+ 	Given N, count all ‘a’(>=1) and ‘b’(>=0) that satisfy the condition a^3 + b^3 = N.
 	Input : N = 9
 	Output : 2
 	1^3 + 2^3 = 9
@@ -14,9 +14,9 @@ public class String07_PairCubeCount {
 	public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
 	int N = input.nextInt();
-	cubePairNN(N);
+	cubePairNN(N); // in N^2
 	System.out.println("-------------------------------------------");
-	cubePairN(N);
+	cubePairN(N); // in N
 	}
 
 	private static void cubePairN(int n) {

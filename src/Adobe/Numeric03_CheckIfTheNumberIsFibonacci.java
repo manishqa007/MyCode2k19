@@ -17,7 +17,6 @@ public class Numeric03_CheckIfTheNumberIsFibonacci {
 		int S1, S2, Sn = 0;
 		S1 = 0;
 		S2 = 1;
-		int fib = 0;
 		boolean flag = false;
 		System.out.print(S1 + " " + S2 + " ");
 		if (num == S1 || num == S2) {
