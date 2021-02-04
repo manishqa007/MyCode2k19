@@ -28,7 +28,7 @@ public class Algo04_DutchNationalFlagProblem {
 			case 0: {
 				temp = a[lo];
 				a[lo] = a[mid];
-				a[mid] = temp;
+				a[mid] = temp; 
 				lo++;
 				mid++;
 				break;

@@ -13,7 +13,7 @@ public class MSI43_BalancedStringOrNot {
 		boolean res2 = withStack(str);
 		System.out.println("String balanced: " + res2);
 	}
-
+ 
 	private static boolean withoutStack(String str) {
 		List<Character> list = new ArrayList<>();
 

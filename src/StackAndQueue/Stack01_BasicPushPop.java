@@ -14,7 +14,7 @@ public class Stack01_BasicPushPop {
 		stack.pop();
 		System.out.println(stack);
 		stack.pop();
-		checkStack(stack);
+		checkStack(stack); 
 		stack.pop();
 		checkStack(stack);
 	}
