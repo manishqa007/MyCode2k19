@@ -39,7 +39,7 @@ public class Matrix02_PrintSpiralMatrix {
 		}
 		row_index_end--; // row_index_end = 3
 		
-		for(j= row_index_end; j>=row_index_start; j--) {  // Printing last column
+		for(j= row_index_end; j>=row_index_start; j--) {  // Printing first column
 			System.out.print(arr[j][col_index_start]+" ");
 		}
 		col_index_start++;

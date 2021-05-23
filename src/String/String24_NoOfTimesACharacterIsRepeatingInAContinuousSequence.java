@@ -3,7 +3,7 @@ package String;
 // i/p: "BBAACCA"
 // o/p: "B2A2C2A1"
 
-public class String22_NoOfTimesACharacterIsRepeatingInAContinuousSequence {
+public class String24_NoOfTimesACharacterIsRepeatingInAContinuousSequence {
 
 	public static void main(String[] args) {
 		String str = "BBAAACC";

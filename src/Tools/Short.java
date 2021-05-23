@@ -1,17 +1,17 @@
 package Tools;
 
 import java.util.Scanner;
-
+// Given: Number with be from 100 to 999 only
 public class Short {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter the num");
 		int num = input.nextInt();
-		// 200 = two hundred [done]
-		// 250 = two hundred fifty [done]
-		// 205 = two hundred and five [done]
-		// 251 = two hundred fifty one [done]
+		//TC1: 200 = two hundred [done]
+		//TC2: 250 = two hundred fifty [done]
+		//TC3: 205 = two hundred and five [done]
+		//TC4: 251 = two hundred fifty one [done]
 		
 		int tempNum = num;
 		int firstDigit, secondDigit, thirdDigit;
@@ -63,5 +63,6 @@ public class Short {
 			}
 			System.out.println(hund+" "+digitValue[9]+" "+tens+" "+ones);
 		}
+		input.close();
 	}
 }

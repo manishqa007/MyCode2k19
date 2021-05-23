@@ -7,7 +7,7 @@ i/P: {1,1,3,3,2,2,1,1,1}, o/p:11=> Remove all 2 from array i.e, {1,1,3,3,1,1,1}
 */
 public class Array04_RemoveAllOccuranceOfElementForMaxSum {
 	public static void main(String[] args) {
-		int arr[] = { 1, 1, 1, 1, 1, 2, 2, 2, 3, 3,3, 4,5 };
+		int arr[] = { 1, 1, 1, 1, 1, 2, 2, 2, 3, 3,3, 4,5 }; // sort if not sorted
 		int maxSum, minElementSum, temp;
 		maxSum = 0;
 		for (int i = 0; i < arr.length; i++) {

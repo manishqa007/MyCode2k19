@@ -6,7 +6,7 @@ public class Sort05_QuickSort {
 	 * correct position in sorted array, and places all smaller (smaller than pivot)
 	 * to left of pivot and all greater elements to right of pivot
 	 */
-	int partition(int arr[], int low, int high) {
+	public int partition(int arr[], int low, int high) {
 		int pivot = arr[high];
 		int i = (low - 1); // index of smaller element
 		for (int j = low; j < high; j++) {
@@ -33,15 +33,14 @@ public class Sort05_QuickSort {
 	 * The main function that implements QuickSort() arr[] --> Array to be sorted,
 	 * low --> Starting index, high --> Ending index
 	 */
-	void sort(int arr[], int low, int high) {
+	public void sort(int arr[], int low, int high) {
 		if (low < high) {
-			/*
-			 * pi is partitioning index, arr[pi] is now at right place
-			 */
+			
+			// pi is partitioning index, arr[pi] is now at right place
+			
 			int pi = partition(arr, low, high);
 
-			// Recursively sort elements before
-			// partition and after partition
+			// Recursively sort elements before partition and after partition
 			sort(arr, low, pi - 1);
 			sort(arr, pi + 1, high);
 		}
@@ -67,4 +66,4 @@ public class Sort05_QuickSort {
 		printArray(arr);
 	}
 }
-/* This code is contributed by Rajat Mishra */
+

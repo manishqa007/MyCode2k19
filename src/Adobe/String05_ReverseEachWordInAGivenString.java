@@ -6,7 +6,7 @@ public class String05_ReverseEachWordInAGivenString {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter the number....");
+		System.out.println("Enter the String....");
 		String str = input.nextLine();
 		input.close();
 		System.out.println("Input String: " + str);

@@ -20,8 +20,9 @@ public class MochaDescribeItSyntax {
 		String st;
 		int tcid = 3079453;
 		while ((st = br.readLine()) != null) {
-			System.out.println("it(\""+st.trim()+"\",function(){"+"\r\n"+"classutitlity.tcidMapping('"+tcid++ +"')"+"\r\n\n"+"})"+"\n");
+			System.out.println("it(\"" + st.trim() + "\",function(){" + "\r\n" + "classutitlity.tcidMapping('" + tcid++
+					+ "')" + "\r\n\n" + "})" + "\n");
 		}
-
+		br.close();
 	}
 }

@@ -16,8 +16,12 @@ public class LinkList03_InsertionAtFront {
 
 	public void addAtFront(int data) {
 		Node newNode = new Node(data);
-		newNode.next = head; // This line is useless in case if we are adding node for first time.
-		head = newNode;
+		if (head == null) { // This is when there in no value in list
+			head = newNode;
+		} else {
+			newNode.next = head;//Make next of new Node as head
+			head = newNode; //Move the head to point to new Node
+		}
 	}
 
 	public void printList() {

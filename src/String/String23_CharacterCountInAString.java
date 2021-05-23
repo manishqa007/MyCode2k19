@@ -4,15 +4,18 @@ import java.util.Scanner;
 
 //i/p: "AABBCCA"
 //o/p: a 3 b 2 c 2
-public class String21_CharacterCountInAString {
+public class String23_CharacterCountInAString {
 
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		String str = new String();
 		System.out.println("Enter the string: "); // "abbbccceeaagb";
+		str = input.nextLine();
 		method1(str.toLowerCase()); // O(N^2)
+		System.out.println("=======================");
 		method2(str.toLowerCase()); // O(N)
+//		medhod3(str.toLowerCase());
 	}
 
 	public static void method1(String str) {

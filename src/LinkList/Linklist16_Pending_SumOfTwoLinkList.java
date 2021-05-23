@@ -1,6 +1,6 @@
-package Algorithms;
+package LinkList;
 
-public class Sort08_BucketSort_Pending {
+public class Linklist16_Pending_SumOfTwoLinkList {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

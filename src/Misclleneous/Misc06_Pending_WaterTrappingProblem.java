@@ -1,6 +1,6 @@
 package Misclleneous;
 
-public class Misc06_WaterTrappingProblem {
+public class Misc06_Pending_WaterTrappingProblem {
 
 	public static void main(String[] args) {
 		int wall[] = {1,2,1,0,4,2};

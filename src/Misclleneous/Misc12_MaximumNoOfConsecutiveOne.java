@@ -14,12 +14,12 @@ public class Misc12_MaximumNoOfConsecutiveOne {
 			if (bin.charAt(i) == '1') {
 				count++;
 			}
-//			if (i == bin.length() - 1 || bin.charAt(i) == '0') {
+			if (i == bin.length() - 1 || bin.charAt(i) == '0') {
 				if (maxCount < count) {
 					maxCount = count;
 				}
 				count = 0;
-//			}
+			}
 		}
 		System.out.println(maxCount);
 	}

@@ -12,11 +12,11 @@ public class Algo02_SlidingWindowAlgorithm {
 		int maxSum = 0;
 		int tempSum = 0;
 		for (int i = 0; i < K; i++) { // Step 1
-			maxSum = tempSum + A[i];
+			tempSum = tempSum + A[i];
 		}
-		tempSum = maxSum;
+		maxSum=tempSum;
 		for (int i = K; i < len; i++) { // Step 2
-			tempSum = tempSum + A[K] - A[i - K];
+			tempSum = tempSum + A[i] - A[i - K];
 			if (tempSum > maxSum) {
 				maxSum = tempSum;
 			}

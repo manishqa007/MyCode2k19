@@ -15,8 +15,12 @@ public class LinkList04_InsertionAtFront2 {
 
 	public void addOnFront(int data) {
 		Node newNode = new Node(data);
-		newNode.next = head;
-		head = newNode;
+		if (head == null)
+			head = newNode;
+		else {
+			newNode.next = head;
+			head = newNode;
+		}
 	}
 
 	public void print() {

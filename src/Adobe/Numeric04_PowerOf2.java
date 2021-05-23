@@ -49,6 +49,7 @@ public class Numeric04_PowerOf2 {
 	}
 
 	private static void method2(int number) {
+		System.out.println("???????????");
 		boolean flag = false;
 		int loop = (int) (Math.log(64) / Math.log(2));
 		System.out.println("loop: " + loop);

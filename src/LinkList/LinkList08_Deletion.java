@@ -25,19 +25,19 @@ public class LinkList08_Deletion {
 		Node prev = null, temp;
 		temp = head;
 
-		// If head node itself holds the key to be deleted
+		//TC-1: If head node itself holds the key to be deleted
 		if (temp != null && temp.data == key) {
 			head = temp.next;
 			return;
 		}
 
-		// Search for the key to be deleted, keep track of the previous node as we need to change temp.next
+		//TC-2: Search for the key to be deleted, keep track of the previous node as we need to change temp.next
 		while (temp != null && temp.data != key) {
 			prev = temp;
 			temp = temp.next;
 		}
 
-		// If key was not present in linked list
+		//TC-3: If key was not present in linked list
 		if (temp == null) {
 			return;
 		}
@@ -68,3 +68,23 @@ public class LinkList08_Deletion {
 		list.print();
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

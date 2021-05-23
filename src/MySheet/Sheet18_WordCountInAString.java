@@ -1,6 +1,8 @@
 package MySheet;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Sheet18_WordCountInAString {
@@ -44,8 +46,14 @@ public class Sheet18_WordCountInAString {
 	}
 	
 	private static void method3(String[] arrStr) {
-		// TODO
-		
+		Map<String, Integer> hm  = new HashMap<String,Integer>();
+		for(String str:arrStr) {
+			if(hm.containsKey(str)) {
+				hm.put(str, hm.get(str)+1);
+			}else
+				hm.put(str, 1);
+		}
+		System.out.println(hm);
 	}
 
 }

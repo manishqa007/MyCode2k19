@@ -2,6 +2,8 @@ package Algorithms;
 
 /*
 	NOTE: Kadane's algorithm is applicable only for array which consist of both positive and negative values.
+	Largest Sum Contiguous Subarray
+	YOUTUBE LINK: https://www.youtube.com/watch?v=HCL4_bOd3-4
 	
 	Algorithm:
 		Initialize:
@@ -19,20 +21,20 @@ package Algorithms;
 public class Algo01_KadaneAlgorithm {
 
 	public static void main(String[] args) {
-		int A[] = {1, 5, -1, 0, 10};
-		int len = A.length;
-		int tempSum=0;
-		int finalSum = 0;
+		int arr[] = {1, 5, -1, 0, 10};
+		int len = arr.length;
+		int currentSum=0;
+		int maxSum = 0;
 		for(int i=0; i<len;i++) {
-			tempSum = tempSum + A[i];
-			if(tempSum<0) { // This is because max sum is always taken in positive
-				tempSum = 0;
+			currentSum = currentSum + arr[i];
+			if(currentSum<0) { // This is because max sum is always taken in positive
+				currentSum = 0;
 			}
-			if(tempSum>finalSum) {
-				finalSum = tempSum;
+			if(currentSum>maxSum) {
+				maxSum = currentSum;
 			}
 		}
-		System.out.println("Maximum sub array: "+finalSum);
+		System.out.println("Maximum sub array: "+maxSum);
 	}
 
 }

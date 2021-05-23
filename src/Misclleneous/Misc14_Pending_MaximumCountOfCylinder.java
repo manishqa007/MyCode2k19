@@ -1,6 +1,6 @@
 package Misclleneous;
 
-public class Misc14_MaximumCountOfCylinder {
+public class Misc14_Pending_MaximumCountOfCylinder {
 
 	public static void main(String[] args) {
 		int currentQuantity[] = { 3, 2, 4 };

@@ -15,25 +15,27 @@ public class LinkList05_InsertionAtEnd {
 
 	public void addOnFront(int data) {
 		Node newNode = new Node(data);
-		newNode.next = head;
-		head = newNode;
+		if (head == null) { // This is when there in no value in list
+			head = newNode;
+		} else {
+			newNode.next = head;
+			head = newNode;
+		}
 	}
 
 	public void addOnEndMethod1(int data) {
 
 		Node newNode = new Node(data);
-		if (head == null) {
-			newNode.next = head; //This is useless
+		last = head;
+		if (head == null) { // This is when there in no value in list
 			head = newNode;
 			return;
 		}
-		last = head;
 		while (last.next != null) {
 			last = last.next;
 		}
 		last.next = newNode;
 	}
-
 
 	public void print() {
 		itr = head;
@@ -44,7 +46,7 @@ public class LinkList05_InsertionAtEnd {
 		System.out.println("");
 
 	}
- 
+
 	public static void main(String[] args) {
 		LinkList05_InsertionAtEnd list = new LinkList05_InsertionAtEnd();
 		list.addOnEndMethod1(10);

@@ -1,6 +1,6 @@
 package Array;
 
-/*
+/* Note: you can't take used no once again
 	Input: A[] = {9, 14, 6, 2, 11}, B[] = {8, 4, 7, 20}
 	Output: 4
 	{9, 7}, {14, 8}, {6, 4} and {2, 20} are the valid pairs.

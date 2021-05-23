@@ -6,12 +6,10 @@ public class Array05_BreakingOfRupeeInLeast {
 		int amoutToBreak = 1065;
 		int temp = amoutToBreak;
 		for (int i = RsValue.length - 1; i >= 0; i--) {
-			temp = temp % RsValue[i];
-			if (((amoutToBreak - temp) / RsValue[i]) != 0)
-				System.out.println("Number of " + RsValue[i] + " note is " + ((amoutToBreak - temp) / RsValue[i]));
-			amoutToBreak = temp;
-			if (temp < 1)
-				break;
+			if(temp>=RsValue[i]) {
+				System.out.println("Number of "+RsValue[i]+" note is: "+temp/RsValue[i]);
+				temp = temp%RsValue[i];
+			}
 		}
 	}
 }
